@@ -45,6 +45,7 @@
         <h2>Primitive datatype</h2>
         <ol>
             <li><b>number</b>-which is used to give number</li>
+            <li><b>bigint</b>-used to add more number nut ends with n .This is uesd in recent time.</li>
             <li><b>String</b>-Should be given within double quote or single quote</li>
             <li><b>boolean</b>-used only for true or false condition</li>
             <li><b>undefined</b>-which shows no value declared</li>
@@ -61,15 +62,20 @@
         let name1=2;
         console.log(name1);
 
+        //bigint//
+        let rupu=1223456789999n;
+        console.log(rupu);
+        console.log(typeof(rupu));
+
         //string//
         let a="hello"//string in double quote
         let b='hi'//string in single quote
         console.log (a);
 
         //boolean//
-        let c=true;//boolean true or false condition//
-        let d=false;
-        console.log (c);
+        let c=2;//boolean true or false condition//
+        let d=2;
+        console.log ("this is " , c==d);
 
         //undefined//
         let e=3;
@@ -77,12 +83,18 @@
         let g;//undefined shows value not given//
         console.log (g);
 
+        //null//
+        let h=1;
+        let i=8;
+        let j=null;
+        console.log(j);
+
         //typeof//
-        let h=4;
-        let i="pravin"
-        let j=true;
-        let k;
-        console.log(typeof(h));//typeof which shows whats type of datatype//
+        let k=4;
+        let l="pravin"
+        let m=true;
+        let n;
+        console.log(typeof(k));//typeof which shows whats type of datatype//
     </script>
 </body>
 </html>
