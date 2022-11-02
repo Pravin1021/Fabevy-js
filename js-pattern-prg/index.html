@@ -20,7 +20,7 @@
 
 
         for(i=5;i>=1;i--){
-            for(j=1;j<=i;j++){ 
+            for(j=1;j<=i;j++){     //n-i+1
                 document.write(j); //printing j value
             }
             document.write("<br>");
@@ -30,11 +30,18 @@
 
 
         for(i=65;i<=69;i++){
+            for(k=68;k>=i;k--){
+                document.write(" ");    
+            }
             for(j=65;j<=i;j++){
                 document.write(String.fromCharCode(j)); //printing j value ascii values
             }
             document.write("<br>");
         }
+
+
+       
+
     </script>
 
 </body>
