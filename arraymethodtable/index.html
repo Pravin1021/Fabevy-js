@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid gray;
+            border-collapse: collapse;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array method</h1>
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Method</th>
+            <th>Syntex</th>
+            <th>Usage</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>forEach()</td>
+            <td>array.forEach()</td>
+            <td>Where we can use instead of for loop</td>
+            <td>let name=["arun","priya","ganesh","nithya","tharun"];<br>
+                 name.forEach(function(nam,index,array){<br>
+                document.write(nam);
+           });</td>
+           <td>arun,priya,ganesh,nithya,tharun</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>map()</td>
+            <td>array.map()</td>
+            <td>Which return the element and createsnew array</td>
+            <td>let newname=name.map(function(nam){<br>
+                return nam.toUpperCase();<br>
+            });
+            document.write(newname);</td>
+            <td>ARUN,PRIYA,GANESH,NITHYA,THARUN</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>join()</td>
+            <td>array.join()</td>
+            <td>it replace comma with our symbols</td>
+            <td>let name=["rupu","ganesh"];<br>
+                let rename=name.join("*");<br>
+                document.write(rename);</td>
+            <td>rupu*ganesh</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>pop()</td>
+            <td>array.pop()</td>
+            <td>it will remove the last element and if we need then print the removed element</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.pop();<br>
+                document.write(rename)</td>
+            <td>rupu,ganesh</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>push()</td>
+            <td>array.push()</td>
+            <td>It add new element to last of an array </td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.push("guru");<br>
+                document.write(rename)</td>
+            <td>rupu,ganesh,velu,guru</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>shift()</td>
+            <td>array.shift()</td>
+            <td>It removes first element</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.shift();<br>
+                document.write(name)</td>
+            <td>ganesh,velu</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>unshift()</td>
+            <td>array.unshift()</td>
+            <td>It adds new element to beganning</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.unshift("guru");<br>
+                document.write(name);</td>
+            <td>guru,rupu,ganesh,velu</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>cancat()</td>
+            <td>array.concat()</td>
+            <td>It adds two array into one(merging the array)</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let add=["guru"];<br>
+                let rename=name.concat(add);<br>
+                document.write(rename)</td>
+            <td>rupu,ganesh,velu,guru</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>splice()</td>
+            <td>array.splice()</td>
+            <td>2-denote where to add,0 denote how many element remove,guru value to add</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.splice(2,0,"guru"); <br>
+                document.write(name)</td>
+            <td>rupu,ganesh,guru,velu</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>length</td>
+            <td>array.length</td>
+            <td>Which returns how many element in the array</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.length;<br>
+                document.write(rename)</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>constructor</td>
+            <td>array.constructor</td>
+            <td>Returns the function that created the Array prototype</td>
+            <td>const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                let text = fruits.constructor;<br>
+                document.write(text);
+            </td>
+            <td>function Array() { [native code] }</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>sort()</td>
+            <td>array,sort()</td>
+            <td>It overwrite the array in alphet order</td>
+            <td>let name=["rupu","ganesh","velu"];<br>
+                let rename=name.sort();<br>
+                document.write(rename);
+            </td>
+            <td>ganesh,rupu,velu</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>reduce()</td>
+            <td>array.reduce()</td>
+            <td>Which used for mathematical operation</td>
+            <td>const numbers = [175, 50, 25];<br>
+                let a=numbers.reduce();<br>
+                function myFunc(total, num) {
+                    return total - num;
+                  }<br>
+                document.write(a)  
+            </td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>lastIndexof()</td>
+            <td>array.lastIndexof()</td>
+            <td>Returns the last index (position) of a specified value</td>
+            <td>const fruits = ["Orange","Apple","Mango","Apple","Banana","Apple"];<br>
+                let index = fruits.lastIndexOf("Apple");<br>
+                document.write(index);
+            </td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>findIndex()</td>
+            <td>array.findIndex()</td>
+            <td>returns -1 if no match is found,it returns the length of passed elements</td>
+            <td>const ages = [3, 10, 18, 20];<br>
+                function checkAge(age) {
+                    return age > 18;
+                  }
+                document.write(checkage);  
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>filter()</td>
+            <td>array.filter()</td>
+            <td>creates a new array filled with elements that pass a test provided by a function.</td>
+            <td>const ages = [32, 33, 16, 40];<br>
+                const result = ages.filter(checkAdult);<br>
+                function checkAdult(age) {<br>
+                  return age >= 18;<br>
+                }</td>
+            <td>32,33,40</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>slice()</td>
+            <td>array.slice()</td>
+            <td>Which returns selected element as array</td>
+            <td>let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br>
+                let citrus = fruits.slice(1, 3);<br>
+                document.write(citrus);
+            </td>
+            <td>orange,lemon</td>
+        </tr>
+    </table>
+   
+</body>
+</html>
