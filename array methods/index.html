@@ -20,17 +20,79 @@
         //     return nam.toUpperCase();
         // });
         // document.write(newname);
-        // let b=["arun"];
-        // let rename=b.toUpperCase();
-        // document.write(rename);
+        
         
 
         /*Uppercase without map method*/
-         let name=["rupu","ganesh"];
-         let rename=String(name).toUpperCase();//use string to change array into string
-         document.write(rename);   
+        //  let name=["rupu","ganesh"];
+        //  let rename=String(name).toUpperCase();//use string to change array into string
+        //  document.write(rename);   
          
+         
+        /*Join()*/
+        // let name=["rupu","ganesh"];
+        // let rename=name.join("*");//it replace comma with our symbols
+        // document.write(rename);
 
+         /*Pop()*/   
+        //  let name=["rupu","ganesh","velu"];
+        //  let rename=name.pop();//it will remove the last element and then print the removed element
+        //  document.write(rename)
+        
+        /*Push()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.push("guru");//it add new element to array and return the array length
+        // document.write(rename)
+
+        /*shift()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.shift();//it remove first element and then returns the removed element
+        // document.write(rename)
+
+        /*unshift()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.unshift("guru");//it adds new element to the beggining
+        // document.write(name);
+        
+
+        /*concat()*/
+        // let name=["rupu","ganesh","velu"];
+        // let add=["guru"];
+        // let rename=name.concat(add);//it adds two array into one(merging the array)
+        // document.write(rename)
+
+        /*splicing()*/    
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.splice(2,0,"guru"); //2-denote where to add,0 denote how many element remove,guru value to add
+        // document.write(name)
+
+        /*slice*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.slice(1); //it remove the element and creates new array
+        // document.write(rename)
+         
+        /*length()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.length;//which returns how many element in the array
+        // document.write(rename)
+
+        /*reverse()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.reverse(); //it reverse the array
+        // document.write(rename)
+
+        /*includes()*/
+        // let name=["rupu","ganesh","velu"];
+        // let rename=name.includes("ganesh") //this helps to find whether the elment present in the array 
+        // document.write(rename)    
+
+        /*filter()*/
+        let ages=[10,2,22,50,57];
+        let result=age.filter(child);
+        function child(age){
+            return age<=10;
+        }
+        document.write(child)
     </script>
 
 </body>
