@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <script>
+        //one
+        let car={
+            name: 'honda',
+            type:'5seater',
+            model:['city','civic']
+        }
+        document.write(car["type"]);
+        document.write("<br>")
+        //2
+        let flowers={
+            name: 'rose',
+            type:['red rose','yellow rose']
+        }
+        document.write(flowers["type"]);//square method
+        document.write("<br>")
+
+        //3
+        let person={
+            name:'Arun',
+            age:24,
+            siblings:{
+                brother:'Guru',
+                sister:'Priya',
+            }
+        }
+        document.write(person.siblings.brother);//dot method
+        document.write("<br>")
+
+        //4
+        let food={
+            dish:'briyani',
+            types:['mutton','chicken','beef'],
+            price:150,
+        }
+        document.write(food.types);
+        document.write("<br>")
+
+        //5
+        let cars={
+            brand:'Fiat',
+            partners:['Tata','Maruti'],
+            supply:'Engine',
+            for:{
+                maruti:'swift',
+                tata:'manza',
+            }
+        }
+        document.write(cars.for.tata);
+        document.write("<br>")
+    </script>
+</body>
+</html>
