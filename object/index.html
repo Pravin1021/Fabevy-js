@@ -157,15 +157,24 @@
 		
 		let array = ['for', 'foreach', 'forin','forof','forelse'];
         for( let array2 in array){
-          console.log(array2);
+          document.write(array2);
         }
 		
 		
 		//forof method
 		let array1 = ['for', 'foreach', 'forin','forof','forelse'];
-		for( let array2 of array1){
-          console.log(array2);
+		for( let array3 of array1){
+          document.write(array3);
         }
+		
+		//object in mothod
+		let value={
+			name:"Pravin",
+			age:24,
+		}
+		for(let name1 in value){
+			console.log(name1+value[name1])
+		}
 		
     </script>
 </body>
