@@ -153,7 +153,7 @@
         document.write(person1 ["profession"]);
         document.write("<br>")
 		
-		//forin method
+		//array forin method
 		
 		let array = ['for', 'foreach', 'forin','forof','forelse'];
         for( let array2 in array){
@@ -161,7 +161,7 @@
         }
 		
 		
-		//forof method
+		//array forof method
 		let array1 = ['for', 'foreach', 'forin','forof','forelse'];
 		for( let array3 of array1){
           document.write(array3);
@@ -173,8 +173,43 @@
 			age:24,
 		}
 		for(let name1 in value){
-			console.log(name1+value[name1])
+			console.log(name1)
 		}
+		
+		//array of object
+		let name=[{owner:"Pravin",company:"Pravin cars"},{car:"hyundai",seat:7}];
+		name.forEach(function(num){
+		for(let val in num){
+			console.log(val+ " : " +num[val]);
+			}
+		})
+		
+		//passing arguments in constructor function
+		function Person () {
+			this.name = 'arun',
+			this.age = 24,
+
+			this.greet = "welcome"
+		}
+
+		const person5 = new Person();
+		console.log(person5);
+
+		
+		//welcome 3sec
+		function pass() {
+            const time = new Date()
+            document.write(" Welcome " + time.toLocaleTimeString());
+            document.write("<br>");
+        }
+
+        // passing argument to setInterval,
+        pass =window.setInterval(pass, 3000);
+        
+        setTimeout(() => {
+            clearInterval(pass)
+        }, 15000);
+		
 		
     </script>
 </body>
