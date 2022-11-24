@@ -15,6 +15,31 @@
         <li>Logical operator</li>
     </ul>
 
+    <h1>Array Methods</h1>
+    <ul>
+        <li>pop</li>
+        <li>push</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>splice</li>
+        <li>slice</li>
+        <li>length</li>
+        <li>reverse</li>
+        <li>index of</li>
+        <li>lastindex</li>
+        <li>filter</li>
+        <li>map</li>
+        <li>reduce</li>
+        <li>find</li>
+        <li>tolocale</li>
+        <li>sort</li>
+        <li>join</li>
+        <li>concat</li>
+        <li>constructor</li>
+        <li>forEach</li>
+        
+    </ul>
+
     <script>
         // var a=10,b=5
         //arithematic operator
@@ -100,24 +125,32 @@
         // document.write("a value is" + a + ("<br>"))
         // document.write("b value is" + b + ("<br>") )
         // document.write("c value is" + c + ("<br>") )    
-        
         // document.write("d value is" + d + ("<br>") )
         // if(a>b){
         //     if(a>c){
-        //         document.write("a is greater")
-        //     }
-        //     else if(a>d){
-        //         document.write("a is greater")
+        //         if(a>d){
+        //             document.write("a is greater")
+        //         }
+        //         else{
+        //             document.write("d is greater")
+        //         }
         //     }
         //     else{
-        //         if(b>c){
-        //             document.write("b is greater")
-        //         }
-        //         else if(b>d){
+        //         if(c>d){
         //             document.write("c is greater")
+        //         } 
+        //         else{
+        //             document.write("do is greater")
         //         }
         //     }
-
+        // }
+        // else if(b>c){
+        //     if(b>d){
+        //         document.write("b is greater")
+        //     }
+        //     else{
+        //         document.write("d is greater")
+        //     }
         // }
         // else{
         //     if(c>d){
@@ -127,6 +160,9 @@
         //         document.write("d is greater")
         //     }
         // }
+
+
+      
 
 
 
@@ -152,6 +188,90 @@
         //     document.write("<br>")
         // }
 
+
+        // let num2=parseInt(prompt("Enter a number"))
+        //  for(i=1;i<=num2;i++){
+        //      for(j=i-num2;j<=i-1;j++){
+        //          document.write(i)
+        //      }
+        //      document.write("<br>")
+        //  }
+
+
+        //array methods
+            //length
+        let a=["vasanth","rupu","guru"]
+        let b=document.write(a.length)
+        document.write(a + "<br>")
+        
+
+        let c=a.push("vel")
+        document.write(a + "<br>")
+        document.write(c + "<br>")
+
+        let d=a.push("bala","ganesh")
+        document.write(a + "<br>")
+        document.write(d + "<br>")
+        
+
+        let e=a.push([1,2,3])
+        console.log(a)
+        console.log(e)
+
+        let f=a.push(person={name:"arun",age:24})
+        console.log(a)
+        console.log(f)
+
+        let g=a.pop()
+        console.log(a)
+        
+
+        let h=a.unshift("gopi")
+        console.log(a)
+        console.log(h)
+
+        let i=a.splice(2,2,"prabha")
+        console.log(a)
+
+        let j=a.slice(-3,-2)
+        console.log(j)
+
+        let k=a.reverse()
+        console.log(a)
+        
+        
+        let l=a.indexOf("bala",1)
+        console.log(l)
+
+
+        let m=a.lastIndexOf("bala")
+        console.log(m)
+
+        let n=a.toString()
+        console.log(n)
+        console.log(typeof(n))
+
+        let o=[1,20,11,111]
+        let p=o.sort()
+        console.log(p)
+
+        let q=o.join("*")
+        console.log(q)
+
+        
+        
+        
+        
+        
+
+
+
+
+
+            
+            
+            
+            
 
 
        
