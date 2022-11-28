@@ -339,9 +339,26 @@
 
     
 
+function name(pp){
+    sub=[]
+    for(j=0;j<pp;j++){
+            sub[j]=parseInt(prompt("enter inner value"))
+        }
+        return sub
+}
 
 
-
+let mainlen=parseInt(prompt("Enter the length of an array"))
+       let main=[]
+       
+       
+       for(i=0;i<mainlen;i++){
+        
+        let subinner=parseInt(prompt("Enter the length of subinner an array"))
+        let ss=name(subinner)
+        main[i]=ss
+       }
+       console.log(main)
 
        
 
