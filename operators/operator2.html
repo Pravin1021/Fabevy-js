@@ -7,7 +7,7 @@
     <title>Operator2</title>
 </head>
 <body>
-    <h1>Types</h1>
+    <!-- <h1>Types</h1>
     <ul>
         <li>Arithematic operator</li>
         <li>Assignment operator</li>
@@ -38,9 +38,19 @@
         <li>constructor</li>
         <li>forEach</li>
         
-    </ul>
+    </ul> -->
+
+    <h1></h1>
+    <input type="password" id="pass">
+    <input type="checkbox" onclick="myfunc()" id="check">
 
     <script>
+
+        
+
+
+
+
         // var a=10,b=5
         //arithematic operator
         // document.write(a+b + ("<br>"))
@@ -546,12 +556,60 @@
     // }
 
 
+        //DOM Document object model
+        //style using attribute 
+        // let tag=prompt("enter the tag")
+        // let attribute=prompt("enter attribute")
+        // let attributeproperty=prompt("enter a property")
+        // let attributevalue=prompt("enter attvalue")
+        // let tagname=document.createElement(tag)
+        // tagname.setAttribute(attribute,attributeproperty+":"+attributevalue)
+        // document.body.appendChild(tagname)
+        // tagname.innerHTML=prompt("enter a content")
+
+
+        //getting tag inside tag
+        // let tag=prompt("enter the tag")
+        // let attribute=prompt("enter attribute")
+        // let attributeproperty=prompt("enter a property")
+        // let attributevalue=prompt("enter attvalue")
+        // let tagname=document.createElement(tag)
+        // let divintag=prompt("enter inside tag")
+        // tagname.setAttribute(attribute,attributeproperty+":"+attributevalue)
+        // let insidetag=document.createElement(divintag)
+        // document.body.appendChild(tagname)
+        // tagname.appendChild(insidetag)
+        // insidetag.innerHTML=prompt("enter a content")
+
+        //set attribute and content by tag 
+        // let tag=document.getElementsByTagName("h1")
+        // let attribute=prompt("enter attribute")
+        // let attributeproperty=prompt("enter a property")
+        // let attributevalue=prompt("enter attvalue")
+        // tag[0].setAttribute(attribute,attributeproperty+":"+attributevalue)
+        // tag[0].innerHTML=prompt("enter a content")
+
+
+
+        function myfunc() {
+            let att=document.getElementById("pass")
+            let ch=document.getElementById("check")
+            if(ch.checked){
+                att.setAttribute("type","text")
+            }
+            else{
+                att.setAttribute("type","password")
+            }
+            
+        }
+        
+
+
+        
+        
+
 
     
-
-    let a=["number"]
-    let b=new car("dgdf")
-    console.log(a instanceof b)
 
 
 
