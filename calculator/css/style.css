@@ -4,29 +4,32 @@
     box-sizing: border-box;
 }
 .container{
-    height: 100vh;
-    width: 100%;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .cal{
-    width: 50%;
+    width: 25%;
     box-shadow: 2px 2px 5px 5px rgb(22, 21, 21);
     text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    margin-top: 6rem;
     padding: 1rem;
-}
-.box{
-    width: 50%;
+    background-color: rgb(146, 140, 140);
 }
 .input{
-    width: 50%;
+    padding: 1rem 0rem;
 }
 .input button{
-    padding: 0.3rem;
-    margin: 0.5rem;
+    padding: 0.7rem;
+    margin: 0.7rem;
+    box-shadow: 1px 1px 3px 3px rgb(22, 21, 21);
+    font-weight: bold;
+}
+.box{
+    padding: 1rem 0rem;
+}
+.box input{
+    padding: 1.5rem;
+    border: 2px solid black;
     box-shadow: 1px 1px 3px 3px rgb(22, 21, 21);
 }

@@ -11,29 +11,46 @@
     <div class="container">
         <div class="cal">
             <div class="box">
-            <input type="text">
+            <input type="text" id="box">
             </div>
             <div class="input">
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="number">0</button>
-            <button class="dot">.</button>
-            <button class="operator">+</button>
-            <button class="operator">-</button>
-            <button class="operator">*</button>
-            <button class="operator">/</button>
-            <button class="operator">=</button>
-            <button class="clear">clear</button>
+            <button class="number" onclick="getvalue('1')">1</button>
+            <button class="number" onclick="getvalue('2')">2</button>
+            <button class="number" onclick="getvalue('3')">3</button>
+            <button class="number" onclick="getvalue('4')">4</button><br>
+            <button class="number" onclick="getvalue('5')">5</button>
+            <button class="number" onclick="getvalue('6')">6</button>
+            <button class="number" onclick="getvalue('7')">7</button>
+            <button class="number" onclick="getvalue('8')">8</button><br>
+            <button class="number" onclick="getvalue('9')">9</button>
+            <button class="number" onclick="getvalue('0')">0</button>
+            <button class="dot" onclick="getvalue('.')">.</button>
+            <button class="operator" onclick="getvalue('+')">+</button><br>
+            <button class="operator" onclick="getvalue('-')">-</button>
+            <button class="operator" onclick="getvalue('*')">*</button>
+            <button class="operator" onclick="getvalue('/')">/</button>
+            <button class="operator" onclick="getvalue('=')">=</button><br>
+            <button class="del" onclick="del()">Del</button>
+            <button class="clear" onclick="clear()">clear</button>
             </div>
         </div>
     </div>
-    
+
+<script>
+    let boxoutput=document.getElementById("box");
+
+    function getvalue(a){
+        boxoutput.value += a;
+    }
+
+    function clear(){
+        boxoutput.value="";
+    }
+    function del(){
+        boxoutput.value=boxoutput.value.slice(0,-1)
+    }
+
+</script>
+
 </body>
 </html>
