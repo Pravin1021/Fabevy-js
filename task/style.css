@@ -1,0 +1,6 @@
+.amount.success input{
+    border-color: green;
+}
+.amount.error input{
+    border-color: red ;
+}

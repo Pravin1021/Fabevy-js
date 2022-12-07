@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            background-color: aqua;
+            margin: 2rem;
+        }
+        .text{
+            border: 2px solid red;
+            width: 100%;
+        }
+       #textarea{
+            margin: 2rem;
+       }
+       .output{
+            border: 2px solid red;
+            width: 100%;
+       }
+       #para{
+            margin: 2rem;
+       }
+       #btn{
+            display: block;
+            margin: auto;
+            padding: 0.4rem 0.7rem;
+       }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            
+            <div class="flex">
+                <div class="text">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Text"></textarea>
+                </div>
+                <div class="output">
+                    <p id="para"></p>
+                </div>
+            </div>
+            
+                <button id="btn">Submit</button>
+           
+           
+        </div>
+    </section>
+
+
+    <script>
+        let btn=document.getElementById("btn")
+        btn.addEventListener("click",myfunc)
+        function myfunc(){
+            let data1=document.getElementById("textarea").value
+            let data2=document.getElementById("para")
+            data2.innerHTML=data1
+        }
+    </script>
+</body>
+</html>
