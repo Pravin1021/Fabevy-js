@@ -9,14 +9,20 @@
 <body>
     
     <script>
-        for(i=1;i<=5;i++){
-            for(j=1;j<=i;j++){
-                document.write(i); //printing i value
-            }
-             document.write("<br>");
-         }
+        // for(i=1;i<=5;i++){
+        //     for(j=1;j<=i;j++){
+        //         document.write(i); //printing i value
+        //     }
+        //      document.write("<br>");
+        //  }
 
+        var n="Education"
+        var empty=[]
+        for(i=n.length-1;i>=0;i--){
+            empty+=n[i]
+        }
 
+        document.write(empty)
 
 
         // for(i=5;i>=1;i--){
